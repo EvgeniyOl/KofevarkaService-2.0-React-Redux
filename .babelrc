@@ -1,0 +1,21 @@
+{
+    "env": {
+      "test": {
+        "plugins": ["@babel/plugin-transform-modules-commonjs"]
+      }
+    },
+    "presets": [
+      "@babel/preset-react",
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "browsers": "last 3 versions"
+          },
+          "useBuiltIns": false,
+          "modules": false
+        }
+      ],
+      "@babel/preset-typescript"
+    ]
+  }

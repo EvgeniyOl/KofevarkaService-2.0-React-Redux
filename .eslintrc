@@ -1,0 +1,91 @@
+{
+    "env": {
+      "browser": true,
+      "es2021": true, 
+      "node": true
+    },
+    "plugins": ["react", "@typescript-eslint", "import", "prettier"],
+    "extends": [
+      "airbnb-typescript",
+      "plugin:react/recommended",
+      "plugin:react-hooks/recommended",
+      "plugin:@typescript-eslint/recommended",
+      "prettier"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "ecmaVersion": 2019,
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "jsx": true,
+        "arrowFunctions": true
+      },
+      "project": "./tsconfig.json"
+    },
+    "rules": {
+      "lines-between-class-members": [
+        "warn", "always"
+      ],
+      "react/react-in-jsx-scope": "off",
+      "no-unused-expressions": "off",
+      "@typescript-eslint/no-unused-expressions": "off",
+      "newline-per-chained-call": ["error", { "ignoreChainWithDepth": 2 }],
+      "@typescript-eslint/dot-notation": "off",
+      "prettier/prettier": [
+        "warn"
+      ],
+      "import/order": [
+        "warn",
+        {
+          "groups": ["builtin", "external", "internal", "parent", "sibling", "index"]
+        }
+      ],
+      "no-restricted-syntax": ["off"],
+      "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
+      "consistent-return": "off",
+      "react/jsx-uses-react": "warn",
+      "react/jsx-uses-vars": "warn",
+      "@typescript-eslint/no-unused-vars": "warn",
+      "import/prefer-default-export": "off",
+      "@typescript-eslint/explicit-function-return-type": "off",
+      "@typescript-eslint/ban-ts-comment": "off",
+      "@typescript-eslint/no-empty-function": "off",
+      "@typescript-eslint/no-var-requires": "off",
+      "@typescript-eslint/no-explicit-any": "off",
+      "@typescript-eslint/no-redeclare": "off",
+      "@typescript-eslint/no-non-null-assertion": "off",
+      "react/no-deprecated": "off",
+      "react/no-string-refs": "off",
+      "react-hooks/exhaustive-deps": "off",
+      "react/require-render-return": "off",
+      "react/jsx-props-no-spreading": "off",
+      "react/require-default-imports": "off",
+      "react/jsx-filename-extension": [
+        "warn",
+        {
+          "extensions": [".js", ".jsx", ".ts", ".tsx"]
+        }
+      ],
+      "react/prop-types": "off",
+      "no-console": ["warn", { "allow": ["warn", "error", "info"] }],
+      "react/display-name": "off",
+      "react/self-closing-comp": [
+        "warn",
+        {
+          "component": true,
+          "html": true
+        }
+      ]
+    },
+    "settings": {
+      "react": {
+        "version": "detect"
+      },
+      "import/resolver": {
+        "node": {
+          "extensions": [".js", ".jsx", ".ts", ".tsx"],
+          "moduleDirectory": ["node_modules", "src"]
+        }
+      }
+    }
+  }

@@ -1,0 +1,7 @@
+node_modules
+dist
+.vscode
+.idea
+**/*.d.ts
+**/*.config.js
+src/setupTests.ts

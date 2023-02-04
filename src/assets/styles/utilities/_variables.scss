@@ -1,0 +1,50 @@
+// Breakpoints
+$xl: 1920px;
+$xm: 1675px;
+$lg: 1200px;
+$xs: 541px;
+
+// Colors
+$yellow: #f5db15;
+$yellowHover: #cfba16;
+$yellowDark: #a99814;
+$black: #313131;
+$blue: #1249d6;
+$white: #fff;
+$red: #ff3434;
+$darkGreen: #004239;
+$lightGreen: #01695b;
+$placeholder: #aeaeae;
+$darkGrey: rgba(0, 0, 0, 0.69);
+
+//Transition
+$transition: all 0.3s;
+
+%image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+%center {
+  position: relative;
+  max-width: 1652px;
+  margin: 0 auto;
+  padding: 0px 20px;
+  @media (max-width: $xm) {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0px 40px;
+  }
+  @media (max-width: $lg) {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0px 40px;
+  }
+  @media (max-width: $xs) {
+    max-width: 540px;
+    margin: 0 auto;
+    padding: 0px 40px;
+  }
+}

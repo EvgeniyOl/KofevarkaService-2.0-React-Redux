@@ -1,0 +1,7 @@
+@mixin responsiveXl($property, $start, $end) {
+  #{$property}: calc(#{$end + px} + (#{$start} - #{$end}) * ((100vw - #{1620 + px}) / (#{1920} - #{1620}))) !important;
+}
+
+@mixin responsiveLg($property, $start, $end) {
+  #{$property}: calc(#{$end + px} + (#{$start} - #{$end}) * ((100vw - #{1200 + px}) / (#{1620} - #{1200}))) !important;
+}
